@@ -1,7 +1,6 @@
 from ctypes import *
 from ctypes.wintypes import *
 from ctypes import cast, POINTER
-from datetime import datetime
 
 # global variable for storing the hook
 hook_id = None
