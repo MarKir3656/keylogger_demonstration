@@ -33,5 +33,30 @@ This code **MAY** be used for:
 
 # About keylogger-demo
 
-This project shows how working global hooks of keyboard on Windows. It's **don't save** save data
-and purpose only as **education demonstrating**
+This project shows how working global hooks of keyboard on Windows. It **does not save** any data
+and is intended **for educational demonstration only**
+
+## Demonstrations
+
+| Technology | Description |
+|------------|----------------|
+| [ctypes](https://docs.python.org/3/library/ctypes.html) | Work with WinAPI |
+| [SetWindowsHookExA](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa) | Setting of global hook WH_KEYBOARD_LL |
+| [CallNextHookEx](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-callnexthookex) | Passes the hook information to the next hook procedure in the current hook chain. |
+| [ToUnicodeEx](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-tounicodeex) | Translates the specified virtual-key code and keyboard state to the corresponding Unicode character or characters. |
+| [GetKeyboardLayout](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getkeyboardlayout) | Retrieves the active input locale identifier. |
+
+## Install and run
+
+### Requirements
+
+- Windows 7/10/11
+- Python 3.7+
+- Administrator rights (for global hook)
+
+[Downloading](https://github.com/MarKir3656/keylogger_demonstration/archive/refs/heads/main.zip) and unzip it.
+Start from directory where you placed a project or from cmd:
+
+```
+python keylogger_demo.py
+```
